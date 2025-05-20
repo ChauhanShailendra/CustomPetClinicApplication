@@ -1,0 +1,1000 @@
+{
+	"info": {
+		"_postman_id": "32975a2a-3983-4c49-b1b3-22f2b0d3bd3c",
+		"name": "CustomPetClinic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45118790",
+		"_collection_link": "https://shailendra-5759007.postman.co/workspace/Shailendra's-Workspace~31bf4325-93e6-4b5b-84e2-308bb44609b8/collection/45118790-32975a2a-3983-4c49-b1b3-22f2b0d3bd3c?action=share&source=collection_link&creator=45118790"
+	},
+	"item": [
+		{
+			"name": "addPetInfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ownerId\": 9,\n  \"petName\": \"Casper\",\n  \"birthDate\": \"2012-08-20\",\n  \"petTypeId\": 2,\n  \"temperament\": \"Aggresive\",\n  \"lengthCm\": 60.5,\n  \"weightKg\": 22.0\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/pet-details/addPetInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"pet-details",
+						"addPetInfo"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"ownerId\": 9,\n  \"petName\": \"Casper\",\n  \"birthDate\": \"2012-08-20\",\n  \"petTypeId\": 2,\n  \"temperament\": \"Aggresive\",\n  \"lengthCm\": 60.5,\n  \"weightKg\": 22.0\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/pet-details/addPetInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"pet-details",
+								"addPetInfo"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 16:41:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"petId\": 14,\n    \"petName\": \"Moti\",\n    \"birthDate\": \"2012-08-20\",\n    \"petTypeName\": \"dog\",\n    \"temperament\": \"Aggresive\",\n    \"lengthCm\": 60.5,\n    \"weightKg\": 22,\n    \"links\": [\n        {\n            \"rel\": \"fetch details\",\n            \"href\": \"http://localhost:9090/pet-details/by-pet/14\",\n            \"type\": \"GET\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "updatePetInfo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ownerId\": 11,\n  \"petId\": 14,\n  \"petName\": \"Bishop\",\n  \"birthDate\": \"2021-03-10\",\n  \"petTypeId\": 2,\n  \"temperament\": \"Aggresive\",\n  \"lengthCm\": 45.0,\n  \"weightKg\": 18.5\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/pet-details/update/PetInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"pet-details",
+						"update",
+						"PetInfo"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:9090/pet-details/update/PetInfo",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"ownerId\": 11,\n  \"petId\": 14,\n  \"petName\": \"Bishop\",\n  \"birthDate\": \"2021-03-10\",\n  \"petTypeId\": 2,\n  \"temperament\": \"Aggresive\",\n  \"lengthCm\": 45.0,\n  \"weightKg\": 18.5\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/pet-details/update/PetInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"pet-details",
+								"update",
+								"PetInfo"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 13:03:52 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"pet\": {\n        \"id\": 14,\n        \"name\": \"Bishop\",\n        \"birthDate\": \"2021-03-10\",\n        \"type\": {\n            \"id\": 2,\n            \"name\": \"dog\",\n            \"new\": false\n        },\n        \"visits\": [],\n        \"new\": false\n    },\n    \"temperament\": \"Aggresive\",\n    \"lengthCm\": 45,\n    \"weightKg\": 18.5,\n    \"new\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "getOwnerDetails",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/owner/11/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"owner",
+						"11",
+						"details"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getOwnerDetails",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/owner/11/details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"owner",
+								"11",
+								"details"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 13:38:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 11,\n    \"firstName\": \"Shailendra\",\n    \"lastName\": \"Chauhan\",\n    \"address\": \"Mumbai\",\n    \"city\": \"Ghansoli\",\n    \"telephone\": \"5555555555\",\n    \"pets\": [\n        {\n            \"id\": 14,\n            \"name\": \"Laika\",\n            \"birthDate\": \"4 years\",\n            \"petTypeId\": 2,\n            \"petTypeName\": \"dog\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "AddOwner",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Shailendra\",\n  \"lastName\": \"Chauhan\",\n  \"address\": \"Mumbai\",\n  \"city\": \"Ghansoli\",\n  \"telephone\": \"2222222222\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/owner/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"owner",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AddOwner",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"Shailendra\",\n  \"lastName\": \"Chauhan\",\n  \"address\": \"Mumbai\",\n  \"city\": \"Ghansoli\",\n  \"telephone\": \"2222222222\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/owner/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"owner",
+								"add"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 13:37:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 11,\n    \"firstName\": \"Shailendra\",\n    \"lastName\": \"Chauhan\",\n    \"address\": \"Mumbai\",\n    \"city\": \"Ghansoli\",\n    \"telephone\": \"2222222222\",\n    \"pets\": [],\n    \"new\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateOwnerDetails",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Shailendra\",\n  \"lastName\": \"Chauhan\",\n  \"address\": \"Mumbai\",\n  \"city\": \"Ghansoli\",\n  \"telephone\": \"5555555555\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/owner/update/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"owner",
+						"update",
+						"11"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UpdateOwnerDetails",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"Shailendra\",\n  \"lastName\": \"Chauhan\",\n  \"address\": \"Mumbai\",\n  \"city\": \"Ghansoli\",\n  \"telephone\": \"5555555555\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/owner/update/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"owner",
+								"update",
+								"11"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 13:37:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 11,\n    \"firstName\": \"Shailendra\",\n    \"lastName\": \"Chauhan\",\n    \"address\": \"Mumbai\",\n    \"city\": \"Ghansoli\",\n    \"telephone\": \"5555555555\",\n    \"pets\": [],\n    \"new\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "findOwnerByLastName",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/owner/findByLastName?lastName=C",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"owner",
+						"findByLastName"
+					],
+					"query": [
+						{
+							"key": "lastName",
+							"value": "C"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "findOwnerByLastName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/owner/findByLastName?lastName=C",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"owner",
+								"findByLastName"
+							],
+							"query": [
+								{
+									"key": "lastName",
+									"value": "C"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 14:38:42 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 11,\n        \"firstName\": \"Shailendra\",\n        \"lastName\": \"Chauhan\",\n        \"address\": \"Mumbai\",\n        \"city\": \"Ghansoli\",\n        \"telephone\": \"5555555555\",\n        \"pets\": [\n            {\n                \"id\": 14,\n                \"name\": \"Bishop\",\n                \"birthDate\": \"2021-03-10\",\n                \"type\": {\n                    \"id\": 2,\n                    \"name\": \"dog\",\n                    \"new\": false\n                },\n                \"visits\": [\n                    {\n                        \"id\": 5,\n                        \"date\": \"2025-05-22\",\n                        \"description\": \"Annual vaccination\",\n                        \"price\": 500,\n                        \"new\": false\n                    }\n                ],\n                \"new\": false\n            },\n            {\n                \"id\": 17,\n                \"name\": \"Franky\",\n                \"birthDate\": \"2012-08-20\",\n                \"type\": {\n                    \"id\": 2,\n                    \"name\": \"dog\",\n                    \"new\": false\n                },\n                \"visits\": [],\n                \"new\": false\n            },\n            {\n                \"id\": 15,\n                \"name\": \"Laika\",\n                \"birthDate\": \"2022-08-20\",\n                \"type\": {\n                    \"id\": 2,\n                    \"name\": \"dog\",\n                    \"new\": false\n                },\n                \"visits\": [],\n                \"new\": false\n            },\n            {\n                \"id\": 16,\n                \"name\": \"Lalu\",\n                \"birthDate\": \"2019-08-20\",\n                \"type\": {\n                    \"id\": 2,\n                    \"name\": \"dog\",\n                    \"new\": false\n                },\n                \"visits\": [],\n                \"new\": false\n            }\n        ],\n        \"new\": false\n    },\n    {\n        \"id\": 6,\n        \"firstName\": \"Jean\",\n        \"lastName\": \"Coleman\",\n        \"address\": \"105 N. Lake St.\",\n        \"city\": \"Monona\",\n        \"telephone\": \"6085552654\",\n        \"pets\": [\n            {\n                \"id\": 8,\n                \"name\": \"Max\",\n                \"birthDate\": \"1995-09-04\",\n                \"type\": {\n                    \"id\": 1,\n                    \"name\": \"cat\",\n                    \"new\": false\n                },\n                \"visits\": [\n                    {\n                        \"id\": 3,\n                        \"date\": \"2009-06-04\",\n                        \"description\": \"neutered\",\n                        \"price\": 3000,\n                        \"new\": false\n                    },\n                    {\n                        \"id\": 2,\n                        \"date\": \"2011-03-04\",\n                        \"description\": \"rabies shot\",\n                        \"price\": 2000,\n                        \"new\": false\n                    }\n                ],\n                \"new\": false\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Samantha\",\n                \"birthDate\": \"1995-09-04\",\n                \"type\": {\n                    \"id\": 1,\n                    \"name\": \"cat\",\n                    \"new\": false\n                },\n                \"visits\": [\n                    {\n                        \"id\": 4,\n                        \"date\": \"2008-09-04\",\n                        \"description\": \"spayed\",\n                        \"price\": 4000,\n                        \"new\": false\n                    },\n                    {\n                        \"id\": 1,\n                        \"date\": \"2010-03-04\",\n                        \"description\": \"rabies shot\",\n                        \"price\": 1000,\n                        \"new\": false\n                    }\n                ],\n                \"new\": false\n            }\n        ],\n        \"new\": false\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "addVisit",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ownerId\": 9,\n  \"petId\": 14,\n  \"date\": \"2021-05-22\",\n  \"description\": \"Annual vaccination\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/visits/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"visits",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addVisit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"ownerId\": 9,\n  \"petId\": 14,\n  \"date\": \"20212-05-22\",\n  \"description\": \"Annual vaccination\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/visits/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"visits",
+								"add"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 16:34:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"date\": \"Visit date cannot be in the past\"\n}"
+				}
+			]
+		},
+		{
+			"name": "addVisit2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ownerId\": 9,\n  \"petId\": 14,\n  \"date\": \"2025-05-22\",\n  \"description\": \"Annual vaccination\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/visits/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"visits",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addVisit2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"ownerId\": 9,\n  \"petId\": 14,\n  \"date\": \"2025-05-22\",\n  \"description\": \"Annual vaccination\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/visits/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"visits",
+								"add"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 16:48:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"date\": \"2025-05-22\",\n    \"description\": \"Annual vaccination\",\n    \"price\": 200,\n    \"new\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "getVisitDetailByOwnerIDandPetId",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/visits/getByOwnerAndPet?ownerId=9&petId=14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"visits",
+						"getByOwnerAndPet"
+					],
+					"query": [
+						{
+							"key": "ownerId",
+							"value": "9"
+						},
+						{
+							"key": "petId",
+							"value": "14"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getVisitDetailByOwnerIDandPetId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/visits/getByOwnerAndPet?ownerId=9&petId=14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"visits",
+								"getByOwnerAndPet"
+							],
+							"query": [
+								{
+									"key": "ownerId",
+									"value": "9"
+								},
+								{
+									"key": "petId",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 16:49:40 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 5,\n        \"date\": \"2025-05-22\",\n        \"description\": \"Annual vaccination\",\n        \"price\": 200,\n        \"new\": false\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getPetDetailByPetId",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/pet-details/by-pet/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"pet-details",
+						"by-pet",
+						"14"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getPetDetailByPetId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/pet-details/by-pet/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"pet-details",
+								"by-pet",
+								"14"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 16:18:38 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"pet\": {\n        \"id\": 14,\n        \"name\": \"Moti\",\n        \"birthDate\": \"2012-08-20\",\n        \"type\": {\n            \"id\": 2,\n            \"name\": \"dog\",\n            \"new\": false\n        },\n        \"visits\": [],\n        \"new\": false\n    },\n    \"temperament\": \"Aggresive\",\n    \"lengthCm\": 60.5,\n    \"weightKg\": 22,\n    \"new\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "getPetDetailByPetId",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/pet-details/by-pet/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"pet-details",
+						"by-pet",
+						"18"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getPetDetailByPetId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/pet-details/by-pet/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"pet-details",
+								"by-pet",
+								"18"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 16:15:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"pet\": {\n        \"id\": 18,\n        \"name\": \"Casper\",\n        \"birthDate\": \"2012-08-20\",\n        \"type\": {\n            \"id\": 2,\n            \"name\": \"dog\",\n            \"new\": false\n        },\n        \"visits\": [],\n        \"new\": false\n    },\n    \"temperament\": \"Loveable\",\n    \"lengthCm\": 60.5,\n    \"weightKg\": 22,\n    \"new\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "getPetDetailsByPetId",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/pet-details/by-pet/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"pet-details",
+						"by-pet",
+						"17"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getPetDetailsByPetId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/pet-details/by-pet/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"pet-details",
+								"by-pet",
+								"17"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 May 2025 14:33:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"pet\": {\n        \"id\": 17,\n        \"name\": \"Franky\",\n        \"birthDate\": \"2012-08-20\",\n        \"type\": {\n            \"id\": 2,\n            \"name\": \"dog\",\n            \"new\": false\n        },\n        \"visits\": [],\n        \"new\": false\n    },\n    \"temperament\": \"Loveable\",\n    \"lengthCm\": 60.5,\n    \"weightKg\": 22,\n    \"new\": false\n}"
+				}
+			]
+		}
+	]
+}
