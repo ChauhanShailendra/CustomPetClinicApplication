@@ -1,6 +1,6 @@
 # CustomPetClinicApplication
 
-This is a custom clinic application — an extension of Spring Boot's popular Pet Clinic app.
+This is a custom pet-clinic application — an extension of Spring Boot's popular Pet Clinic app.
 
 ---
 
