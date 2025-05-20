@@ -54,10 +54,10 @@ After successfully running: ``` mvn clean install ```
 
 - Models and DTOs for clean data handling
 - Full CRUD operations for:
-- Owner
-- Pet
-- PetDetails
-- Visits
+   - Owner
+   - Pet
+   - PetDetails
+   - Visits
 - Exception handling
 
 ---
