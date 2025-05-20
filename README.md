@@ -6,7 +6,7 @@ This is a custom clinic application — an extension of Spring Boot's popular Pe
 
 ## 🛠️ Build & Run
 
-After successfully running:
+After successfully running: ``` mvn clean install ```
 
 
 ### ▶️ Start the application using:
