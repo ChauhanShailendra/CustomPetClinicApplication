@@ -94,6 +94,6 @@ After successfully running: ``` mvn clean install ```
 Includes:
 - API payloads
 - Sample responses
-you can find postman collection in file - CustomPetClinic.postman_collection.json
+- you can find postman collection in file - ``` CustomPetClinic.postman_collection.json ```
 
 _For reference and quick testing._
