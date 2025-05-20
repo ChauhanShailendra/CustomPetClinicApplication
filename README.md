@@ -65,21 +65,21 @@ After successfully running: ``` mvn clean install ```
 ### 💡 Pluggable Components
 
 - **Pet Age Formatter**
-- `yearOnlyFormatter`
-- `detailedFormatter`
+   - `yearOnlyFormatter`
+   - `detailedFormatter`
 
 - **Notification on Visit Scheduling**
-- `emailNotifier`
-- `smsNotifier`
+   - `emailNotifier`
+   - `smsNotifier`
 
 - **Pricing Strategies**
-- `flatPricing`
-- `timeBasedPricing`
-- `locationBasedPricing`
+   - `flatPricing`
+   - `timeBasedPricing`
+   - `locationBasedPricing`
 
 - **Swappable Data Storage Backends**
-- In-memory (H2)
-- MySQL
+   - In-memory (H2)
+   - MySQL
 
 ---
 
